@@ -1,0 +1,49 @@
+html {
+    --primaryColor: aquamarine;
+} body {
+    margin: 0;
+}
+
+ul {
+    list-style-type: none;
+}
+
+header {
+    background-color: var(--primaryColor);
+    display: flex;
+    text-align: center;
+    align-items: center;
+} header h1 {
+    width: 75%;
+} .searchBoxContainer {
+    width: 25%;
+}
+
+main {
+    display: flex;
+    text-align: center;
+    align-items: center;
+} .forecastContainer {
+    display: flex;
+    width: 75%;
+    flex-wrap: wrap;
+    padding: 25px;
+} .crrntFrCstContainer {
+    width: 100%;
+    background-color: var(--primaryColor);
+} .fiveDay4castContainer {
+    width: 100%;
+} .searchHistoryContainer {
+    width: 25%;
+    background-color: var(--primaryColor);
+}
+
+.fiveDay4cast {
+    display: flex;
+    gap: 25px;
+    padding: 0;
+    justify-content: center;
+} .fiveDay4cast li {
+    background-color: var(--primaryColor);
+    padding: 25px;
+}

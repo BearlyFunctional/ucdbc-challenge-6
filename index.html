@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous"> -->
+    <link rel="stylesheet" href="./Assets/style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Cool weather app!</h1>
+        <div class="searchBoxContainer">
+            <form action="searchCity">
+                <input type="text" name="SearchBox" id="SearchBox" placeholder="Your city here"/>
+                <input type="submit" value="Search"/>
+            </form>
+        </div>
+    </header>
+
+    <main>
+        <div class="forecastContainer">
+            <div class="crrntFrCstContainer">
+                <h2>City Placeholder Name</h2>
+                <h2>Current Date</h2>
+                <ul class="crrntForcast">
+                    <li id="crrntTemp"></li>
+                    <li id="crrntWind"></li>
+                    <li id="crrntHumidity"></li>
+                </ul>
+            </div>
+            
+            <div class="fiveDay4castContainer">
+                <ul class="fiveDay4cast">
+                    <li id="fiveDay-1">
+                        <h2>Current Date + 1</h2>
+                        <ul class="fiveDay-1-Forcast">
+                            <li id="fiveDay-1-Temp"></li>
+                            <li id="fiveDay-1-Wind"></li>
+                            <li id="fiveDay-1-Humidity"></li>
+                        </ul>
+                    </li>
+                    <li id="fiveDay-2">
+                        <h2>Current Date + 2</h2>
+                        <ul class="fiveDay-2-Forcast">
+                            <li id="fiveDay-2-Temp"></li>
+                            <li id="fiveDay-2-Wind"></li>
+                            <li id="fiveDay-2-Humidity"></li>
+                        </ul>
+                    </li>
+                    <li id="fiveDay-3">
+                        <h2>Current Date + 3</h2>
+                        <ul class="fiveDay-3-Forcast">
+                            <li id="fiveDay-3-Temp"></li>
+                            <li id="fiveDay-3-Wind"></li>
+                            <li id="fiveDay-3-Humidity"></li>
+                        </ul>
+                    </li>
+                    <li id="fiveDay-4">
+                        <h2>Current Date + 4</h2>
+                        <ul class="fiveDay-4-Forcast">
+                            <li id="fiveDay-4-Temp"></li>
+                            <li id="fiveDay-4-Wind"></li>
+                            <li id="fiveDay-4-Humidity"></li>
+                        </ul>
+                    </li>
+                    <li id="fiveDay-5">
+                        <h2>Current Date + 5</h2>
+                        <ul class="fiveDay-5-Forcast">
+                            <li id="fiveDay-5-Temp"></li>
+                            <li id="fiveDay-5-Wind"></li>
+                            <li id="fiveDay-5-Humidity"></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="searchHistoryContainer">
+            <h3>Search History:</h3>
+            <ul class="searchHistory">
+                <li>placeholder search history</li>
+            </ul>
+        </div>
+    </main>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/dayjs.min.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script> -->
+    <script src="./Assets/script.js"></script>
+
+</body>
+</html>
