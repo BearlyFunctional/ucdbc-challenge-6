@@ -99,10 +99,12 @@ function populatePrevSearches(){
 }
 
 onload = (event) => {
-    searchForm.children[0].value = (prevSearchResults[prevSearchResults.length - 1])
-    console.log(searchValue)
-    searchByCity()
-    searchForm.children[0].value = ''
+    if (prevSearchResults != []) {
+        searchForm.children[0].value = (prevSearchResults[prevSearchResults.length - 1])
+        console.log(searchValue)
+        searchByCity()
+        searchForm.children[0].value = ''
+    }
 }
 
 populatePrevSearches()
