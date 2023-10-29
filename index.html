@@ -4,16 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous"> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Days+One&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./Assets/style.css">
 </head>
 <body>
 
     <header>
-        <h1>Cool weather app!</h1>
+        <h1>Window: Weather Lookup</h1>
         <div class="searchBoxContainer">
-            <form action="searchCity">
-                <input type="text" name="SearchBox" id="SearchBox" placeholder="Your city here"/>
+            <form id='searchForm' action="searchCity">
+                <input type="text" name="SearchBox" id="SearchBox" placeholder="Your City, CA, USA"/>
                 <input type="submit" value="Search"/>
             </form>
         </div>
@@ -22,55 +24,43 @@
     <main>
         <div class="forecastContainer">
             <div class="crrntFrCstContainer">
-                <h2>City Placeholder Name</h2>
-                <h2>Current Date</h2>
-                <ul class="crrntForcast">
-                    <li id="crrntTemp"></li>
-                    <li id="crrntWind"></li>
-                    <li id="crrntHumidity"></li>
+                <h2 class="crrntCity"></h2>
+                <h2 class='crrntTime'></h2>
+                <img src="" class="crrntIcon"></img>
+                <ul class="crrntForecast">
                 </ul>
             </div>
             
             <div class="fiveDay4castContainer">
                 <ul class="fiveDay4cast">
                     <li id="fiveDay-1">
-                        <h2>Current Date + 1</h2>
-                        <ul class="fiveDay-1-Forcast">
-                            <li id="fiveDay-1-Temp"></li>
-                            <li id="fiveDay-1-Wind"></li>
-                            <li id="fiveDay-1-Humidity"></li>
+                        <img src="" class="fiveDayIcon-1"></img>
+                        <h2 class="fiveDayDate-1"></h2>
+                        <ul class="fiveDay-1-Forecast">
                         </ul>
                     </li>
                     <li id="fiveDay-2">
-                        <h2>Current Date + 2</h2>
-                        <ul class="fiveDay-2-Forcast">
-                            <li id="fiveDay-2-Temp"></li>
-                            <li id="fiveDay-2-Wind"></li>
-                            <li id="fiveDay-2-Humidity"></li>
+                        <img src="" class="fiveDayIcon-2"></img>
+                        <h2 class="fiveDayDate-2"></h2>
+                        <ul class="fiveDay-2-Forecast">
                         </ul>
                     </li>
                     <li id="fiveDay-3">
-                        <h2>Current Date + 3</h2>
-                        <ul class="fiveDay-3-Forcast">
-                            <li id="fiveDay-3-Temp"></li>
-                            <li id="fiveDay-3-Wind"></li>
-                            <li id="fiveDay-3-Humidity"></li>
+                        <img src="" class="fiveDayIcon-3"></img>
+                        <h2 class="fiveDayDate-3"></h2>
+                        <ul class="fiveDay-3-Forecast">
                         </ul>
                     </li>
                     <li id="fiveDay-4">
-                        <h2>Current Date + 4</h2>
-                        <ul class="fiveDay-4-Forcast">
-                            <li id="fiveDay-4-Temp"></li>
-                            <li id="fiveDay-4-Wind"></li>
-                            <li id="fiveDay-4-Humidity"></li>
+                        <img src="" class="fiveDayIcon-4"></img>
+                        <h2 class="fiveDayDate-4"></h2>
+                        <ul class="fiveDay-4-Forecast">
                         </ul>
                     </li>
                     <li id="fiveDay-5">
-                        <h2>Current Date + 5</h2>
-                        <ul class="fiveDay-5-Forcast">
-                            <li id="fiveDay-5-Temp"></li>
-                            <li id="fiveDay-5-Wind"></li>
-                            <li id="fiveDay-5-Humidity"></li>
+                        <img src="" class="fiveDayIcon-5"></img>
+                        <h2 class="fiveDayDate-5"></h2>
+                        <ul class="fiveDay-5-Forecast">
                         </ul>
                     </li>
                 </ul>
@@ -78,16 +68,18 @@
         </div>
         
         <div class="searchHistoryContainer">
-            <h3>Search History:</h3>
-            <ul class="searchHistory">
-                <li>placeholder search history</li>
-            </ul>
+            <div class="historyBox">
+                <h3>Search History:</h3>
+                <ul class="searchHistory">
+                </ul>
+            </div>
         </div>
     </main>
 
 
     <script src="https://cdn.jsdelivr.net/npm/dayjs@1/dayjs.min.js"></script>
-    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/plugin/utc.js"></script>
+    <script>dayjs.extend(window.dayjs_plugin_utc)</script>
     <script src="./Assets/script.js"></script>
 
 </body>
