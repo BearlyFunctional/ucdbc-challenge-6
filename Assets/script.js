@@ -30,7 +30,7 @@ function searchByCity() {
     console.log(event)
     event.preventDefault()
     searchValue = searchForm.children[0].value
-    fetch('http://api.openweathermap.org/data/2.5/forecast?q=' + searchValue + '&units=imperial&appid=' + apiKey)
+    fetch('https://api.openweathermap.org/data/2.5/forecast?q=' + searchValue + '&units=imperial&appid=' + apiKey)
         .then ( response => {
             if (response.ok != true) {
                 console.log(response)
