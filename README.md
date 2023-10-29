@@ -1,4 +1,4 @@
-# ucdbc-challenge-6
+# Window: Weather Lookup (UCDBC Challenge 6)
 
 # Description
 
